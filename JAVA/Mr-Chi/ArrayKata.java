@@ -1,8 +1,10 @@
-import java.util.Scanner;
 public class ArrayKata{
-	Scanner input = new Scanner(System.in);
-	int minumumIn = input.nextInt();
-	for(int count = 0; count < minimumIn; count++){
-    int[] arr = new int[count];
-  }
+  public static int maximumIn(int[] arrays)
+    int largest = arrays[0];
+    for(int i = 0; i < arrays.length; i++){
+      if(arrays[i] > largest){
+        largest = arrays[i];
+      }
+    }
+    return largest;
 }
