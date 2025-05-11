@@ -1,10 +1,49 @@
-import java.util.Arrays;
+import java.util.Scanner;
 public class ArrayKataTest{
 	public static void main(String[] args){
-		ArrayKata inputArrays = new ArrayKata();
+//maximumIn
+    Scanner inputArrays = new Scanner(System.in);
 
-		int[] nums = {4, 8, 6, 9, 5, 2};
-		int largest = inputArrays.maximumIn(nums);
+    System.out.print("How many numbers do you want to input?: ");
+    int arraySize = inputArrays.nextInt();
+
+		int[] nums = new int[arraySize];
+    for(int i = 0; i < arraySize; i++){
+      System.out.print("Enter number " + (i + 1) + ": ");
+      nums[i] = inputArrays.nextInt();
+    }
+
+		int largest = ArrayKata.maximumIn(nums);
 		System.out.println(largest + " is the largest number.");
+	}
+//minimumIn
+    Scanner inputArrays = new Scanner(System.in);
+
+    System.out.print("How many numbers do you want to input?: ");
+    int arraySize = inputArrays.nextInt();
+
+		int[] nums = new int[arraySize];
+    for(int i = 0; i < arraySize; i++){
+      System.out.print("Enter number " + (i + 1) + ": ");
+      nums[i] = inputArrays.nextInt();
+    }
+
+		int smallest = ArrayKata.minimumIn(nums);
+		System.out.println(largest + " is the smallest number.");
+	}
+//sumOf
+    Scanner inputArrays = new Scanner(System.in);
+
+    System.out.print("How many numbers do you want to input?: ");
+    int arraySize = inputArrays.nextInt();
+
+		int[] nums = new int[arraySize];
+    for(int i = 0; i < arraySize; i++){
+      System.out.print("Enter number " + (i + 1) + ": ");
+      nums[i] = inputArrays.nextInt();
+    }
+
+		int sum = ArrayKata.sumOf(nums);
+		System.out.println(sum + " is the total sum of the numbers.");
 	}
 }
