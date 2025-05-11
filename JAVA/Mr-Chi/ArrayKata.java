@@ -1,5 +1,5 @@
 public class ArrayKata{
-//maximumIn
+/*maximumIn
   public static int maximumIn(int[] arrays){
     int largest = arrays[0];
     for(int i = 0; i < arrays.length; i++){
@@ -27,6 +27,14 @@ public class ArrayKata{
     }
     return sum;
   }
-//sumOfEvenNumbersIn
-  
+//sumOfEvenNumbersIn */
+  public static int sumOfEvenNumbersIn(int[] arrays){
+    int sumOfEven = 0;
+    for(int i = 0; i < arrays.length; i++){
+      if(arrays[i] % 2 == 0){
+        sumOfEven += arrays[i];
+      }
+    }
+    return sumOfEven;
+  }
 }
