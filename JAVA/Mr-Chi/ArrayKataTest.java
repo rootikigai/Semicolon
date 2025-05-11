@@ -45,7 +45,7 @@ public class ArrayKataTest{
 
 		int sum = ArrayKata.sumOf(nums);
 		System.out.println(sum + " is the total sum of the numbers.");
-	}*/
+	}
 //sumOfEvenNumbersIn
     Scanner inputArrays = new Scanner(System.in);
 
@@ -60,5 +60,20 @@ public class ArrayKataTest{
 
 		int sumOfEven = ArrayKata.sumOfEvenNumbersIn(nums);
 		System.out.println(sumOfEven + " is the total sum of even numbers.");
+	}
+//sumOfOddNumbersIn */
+    Scanner inputArrays = new Scanner(System.in);
+
+    System.out.print("How many numbers do you want to input?: ");
+    int arraySize = inputArrays.nextInt();
+
+		int[] nums = new int[arraySize];
+    for(int i = 0; i < arraySize; i++){
+      System.out.print("Enter number " + (i + 1) + ": ");
+      nums[i] = inputArrays.nextInt();
+    }
+
+		int sumOfOdd = ArrayKata.sumOfOddNumbersIn(nums);
+		System.out.println(sumOfOdd + " is the total sum of odd numbers.");
 	}
 }

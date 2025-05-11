@@ -27,7 +27,7 @@ public class ArrayKata{
     }
     return sum;
   }
-//sumOfEvenNumbersIn */
+//sumOfEvenNumbersIn
   public static int sumOfEvenNumbersIn(int[] arrays){
     int sumOfEven = 0;
     for(int i = 0; i < arrays.length; i++){
@@ -36,5 +36,15 @@ public class ArrayKata{
       }
     }
     return sumOfEven;
+  }
+//sumOfOddNumbersIn */
+  public static int sumOfOddNumbersIn(int[] arrays){
+    int sumOfOdd = 0;
+    for(int i = 0; i < arrays.length; i++){
+      if(arrays[i] % 2 != 0){
+        sumOfOdd += arrays[i];
+      }
+    }
+    return sumOfOdd;
   }
 }
