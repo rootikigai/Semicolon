@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Jass2{
+	public static void main (String [] args) {	    
+		  Scanner input = new Scanner (System.in);
+		  
+		  System.out.print("Enter a number: ");
+		  int number = input.nextInt();
+		  
+		  int divi = number % 3;
+		  
+		  if (divi == 0){
+		    System.out.printf("%d is divisible by 3 %n", number);
+        }
+      else {
+        System.out.printf("%d is not divisible by 3 %n", number);
+      }
+      
+      input.close();
+	}
+}

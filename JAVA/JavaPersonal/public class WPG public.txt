@@ -1,0 +1,13 @@
+public class WPG{
+	public static void main(String[] args){
+	
+		double currWorldPop = 8200000000;
+		double growthRate = (0.9 / 100);
+		double years = 2
+
+		newWorldPop = currWorldPop(Math.pow((1 + growthRate),(years));
+
+		System.out.println(The estimated world population in 2 years is %d, newWorldPop);
+	
+	}
+}
