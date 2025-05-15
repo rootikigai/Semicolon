@@ -49,7 +49,17 @@ public class ArrayKata{
   }
 //maximumAndMinimumOf
   public static int maximumAndMinimumOf(int[] arrays){
-  }*/
+    int largest = arrays[0];
+    int smallest = arrays[0];
+    for(int i = 0; i < arrays.length; i++){
+      if(arrays[i] > largest)
+        largest = arrays[i];
+      if(arrays[i] < smallest)
+        smallest = arrays[i];
+    }
+    return largest;
+    return smallest;
+  }
 //noOfOddNumbersIn
   public static int noOfOddNumbersIn(int[] arrays){
     int noOfOdd = 0;
@@ -59,5 +69,15 @@ public class ArrayKata{
       }
     }
     return noOfOdd;
+  }*/
+//noOfEvenNumbersIn
+  public static int noOfEvenNumbersIn(int[] arrays){
+    int noOfEven = 0;
+    for(int i = 0; i < arrays.length; i++){
+      if(arrays[i] % 2 == 0){
+        noOfEven += 1;
+      }
+    }
+    return noOfEven;
   }
 }
