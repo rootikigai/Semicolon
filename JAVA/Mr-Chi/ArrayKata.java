@@ -23,7 +23,7 @@ public class ArrayKata{
   public static int sumOf(int[] arrays){
     int sum = 0;
     for(int i = 0; i < arrays.length; i++){
-      sum = sum + arrays[i];
+      sum += arrays[i];
     }
     return sum;
   }
@@ -37,7 +37,7 @@ public class ArrayKata{
     }
     return sumOfEven;
   }
-//sumOfOddNumbersIn */
+//sumOfOddNumbersIn
   public static int sumOfOddNumbersIn(int[] arrays){
     int sumOfOdd = 0;
     for(int i = 0; i < arrays.length; i++){
@@ -46,5 +46,18 @@ public class ArrayKata{
       }
     }
     return sumOfOdd;
+  }
+//maximumAndMinimumOf
+  public static int maximumAndMinimumOf(int[] arrays){
+  }*/
+//noOfOddNumbersIn
+  public static int noOfOddNumbersIn(int[] arrays){
+    int noOfOdd = 0;
+    for(int i = 0; i < arrays.length; i++){
+      if(arrays[i] % 2 != 0){
+        noOfOdd += 1;
+      }
+    }
+    return noOfOdd;
   }
 }
