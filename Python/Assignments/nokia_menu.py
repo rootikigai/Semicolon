@@ -184,3 +184,85 @@ Press 0 to go back to MESSAGE SETTINGS MENU
                         print("Service Command Editor")
                     case _:
                         print("Invalid choice. Try again!")
+
+        case "3":
+            print("CHAT")
+        case "4":
+            while True:
+                print("""
+-------------
+CALL REGISTER
+-------------
+1. Missed Calls              5. Show Call Duration
+2. Received Calls            6. Show Call Costs
+3. Dialled Numbers           7. Call Cost Settings
+4. Erase Recent Call Lists   8. Prepaid Credit
+
+Press 0 to go back to MAIN MENU
+""")
+                call_register = input("Select a Call Register Menu choice with the corresponding number: ")
+                if call_register == "0":
+                    break
+                match call_register:
+                    case "1":
+                        print("Missed Calls")
+                    case "2":
+                        print("Received Calls")
+                    case "3":
+                        print("Dialled Numbers")
+                    case "4":
+                        print("Erase Recent Call List")
+                    case "5":
+                        while True:
+                            print("""
+------------------
+SHOW CALL DURATION
+------------------
+1. Last Call Duration               4. Dialled Calls' Duration
+2. All Call's Duration              5. Clear Timers
+3. Received Calls' Duration
+
+Press 0 to go back to CALL REGISTER MENU
+""")
+                            show_call_duration = print("Select a Show Call Duration Menu choice with the corresponding number: ")
+                            if show_call_duration == "0":
+                                break
+                            match show_call_duration:
+                                case "1":
+                                    print("Last Call Duration")
+
+                    case "6":
+                        while True:
+                            print()
+                    case "7":
+                        while True:
+                            print()
+                    case "8":
+                        print("Prepaid Credit")
+
+        case "5":
+            while True:
+                print()
+
+        case "6":
+            while True:
+                print()
+
+        case "7":
+            print("CALL DIVERT")
+        case "8":
+            print("GAMES")#Abeg, build one snake xenzia game for here join lol!
+        case "9":
+            print("CALCULATOR")#Build calculator join!
+        case "10":
+            print("REMINDERS")
+        case "11":
+            while True:
+                print()
+
+        case "12":
+            print("PROFILES")
+        case "13":
+            print("SIM Services")
+        case _:
+            print("Invalid choice. Try again!")
