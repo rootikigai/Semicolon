@@ -219,30 +219,116 @@ Press 0 to go back to MAIN MENU
 SHOW CALL DURATION
 ------------------
 1. Last Call Duration               4. Dialled Calls' Duration
-2. All Call's Duration              5. Clear Timers
+2. All Calls' Duration              5. Clear Timers
 3. Received Calls' Duration
 
 Press 0 to go back to CALL REGISTER MENU
 """)
-                            show_call_duration = print("Select a Show Call Duration Menu choice with the corresponding number: ")
+                            show_call_duration = input("Select a Show Call Duration Menu choice with the corresponding number: ")
                             if show_call_duration == "0":
                                 break
                             match show_call_duration:
                                 case "1":
                                     print("Last Call Duration")
+                                case "2":
+                                    print("All Call's Duration")
+                                case "3":
+                                    print("Received Calls' Duration")
+                                case "4":
+                                    print("Dialled Calls' Duration")
+                                case "5":
+                                    print("Clear Timers")
+                                case _:
+                                    print("Invalid choice. Try again!")
 
                     case "6":
                         while True:
-                            print()
+                            print("""
+---------------
+SHOW CALL COSTS
+---------------
+1. Last Call Cost
+2. All Calls' Costs
+3. Clear Counters
+
+Press 0 to go back to CALL REGISTER MENU
+""")
+                            show_call_costs = input("Select a Show Call Costs Menu choice with the corresponding number:")
+                            if show_call_costs == "0":
+                                break
+                            match show_call_costs:
+                                case "1":
+                                    print("Last Call Cost")
+                                case "2":
+                                    print("All Calls' Costs")
+                                case "3":
+                                    print("Clear Counters")
+                                case _:
+                                    print("Invalid choice. Try again!")
+
                     case "7":
                         while True:
-                            print()
+                            print("""
+------------------
+CALL COST SETTINGS
+------------------
+1. Call Cost Limit
+2. Show Costs In
+
+Press 0 to go back to CALL REGISTER MENU
+""")
+                            call_cost_settings = input("Select a Show Call Costs Menu choice with the corresponding number:")
+                            if call_cost_settings == "0":
+                                break
+                            match call_cost_settings:
+                                case "1":
+                                    print("Call Cost Limit")
+                                case "2":
+                                    print("Show Costs In")
+                                case _:
+                                    print("Invalid choice. Try again!")
+
                     case "8":
                         print("Prepaid Credit")
 
         case "5":
             while True:
-                print()
+                print("""
+-----
+TONES
+-----
+1. Ringing Tone              5. Message Alert Tone
+2. Ringing Volume            6. Keypad Tones
+3. Incoming Call Alert       7. Warning and Game Tones
+4. Composer                  8. Vibrating Alert
+                9. Screen Saver
+
+Press 0 to go back to MAIN MENU
+""")
+                tones = input("Select a Tones Menu choice with the corresponding number:")
+                if tones == "0":
+                    break
+                match tones:
+                    case "1":
+                        print("Ringing Tone")
+                    case "2":
+                        print("Ringing Volume")
+                    case "3":
+                        print("Incoming Call Alert")
+                    case "4":
+                        print("Composer")
+                    case "5":
+                        print("Message Alert Tone")
+                    case "6":
+                        print("Keypad Tones")
+                    case "7":
+                        print("Warning and Game Tones")
+                    case "8":
+                        print("Vibrating Alert")
+                    case "9":
+                        print("Screen Saver")
+                    case _:
+                        print("Invalid choice. Try again!")
 
         case "6":
             while True:
