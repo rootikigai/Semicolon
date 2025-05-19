@@ -332,7 +332,117 @@ Press 0 to go back to MAIN MENU
 
         case "6":
             while True:
-                print()
+                print("""
+--------
+SETTINGS
+--------
+1. Call Settings        3. Security Settings
+2. Phone Settings       4. Restore Factory Settings
+
+Press 0 to go back to MAIN MENU
+""")
+                settings = input("Select a Settings Menu choice with the corresponding number:")
+                if settings == "0":
+                    break
+                match settings:
+                    case "1":
+                        while True:
+                            print("""
+-------------
+CALL SETTINGS
+-------------
+1. Automatic Redial             4. Own Number Sending
+2. Speed Dialling               5. Phone Line in Use
+3. Call Waiting Options         6. Automatic Answer
+
+Press 0 to go back to SETTINGS MENU
+""")
+                            call_settings = input("Select a Call Settings Menu choice with the corresponding number:")
+                            if call_settings == "0":
+                                break
+                            match call_settings:
+                                case "1":
+                                    print("Automatic Redial")
+                                case "2":
+                                    print("Speed Dialling")
+                                case "3":
+                                    print("Call Waiting Options")
+                                case "4":
+                                    print("Own Number Sending")
+                                case "5":
+                                    print("Phone Line In Use")
+                                case "6":
+                                    print("Automatic Answer")
+                                case _:
+                                    print("Invalid choice. Try again!")
+
+
+                    case "2":
+                        while True:
+                            print("""
+--------------
+PHONE SETTINGS
+--------------
+1. Language                     4. Network Selection
+2. Cell Info Display            5. Lights
+3. Welcome Note                 6. Confirm SIM Service Actions
+
+Press 0 to go back to SETTINGS MENU
+""")
+                            phone_settings = input("Select a Phone Settings Menu choice with the corresponding number:")
+                            if phone_settings == "0":
+                                break
+                            match phone_settings:
+                                case "1":
+                                    print("Language")
+                                case "2":
+                                    print("Cell Info Display")
+                                case "3":
+                                    print("Welcome Note")
+                                case "4":
+                                    print("Network Selection")
+                                case "5":
+                                    print("Lights")
+                                case "6":
+                                    print("Confirm SIM Service Actions")
+                                case _:
+                                    print("Invalid choice. Try again!")
+
+                    case "3":
+                        while True:
+                            print("""
+-----------------
+SECURITY SETTINGS
+-----------------
+1. PIN Code Request                     4. Closed User Group
+2. Call Barring Service                 5. Phone Security
+3. Fixed Dialling                       6. Change Access Codes
+
+Press 0 to go back to SETTINGS MENU
+""")
+                            security_settings = input("Select a Security Settings Menu choice with the corresponding number:")
+                            if security_settings == "0":
+                                break
+                            match security_settings:
+                                case "1":
+                                    print("PIN Code Request")
+                                case "2":
+                                    print("Call Barring Service")
+                                case "3":
+                                    print("Fixed Dialling")
+                                case "4":
+                                    print("Closed User Group Default")
+                                case "5":
+                                    print("Phone Security")
+                                case "6":
+                                    print("Change Access Codes")
+                                case _:
+                                    print("Invalid choice. Try again!")
+
+                    case "4":
+                        print("Restore Factory Settings")
+                    case _:
+                        print("Invalid choice. Try again!")
 
         case "7":
             print("CALL DIVERT")
