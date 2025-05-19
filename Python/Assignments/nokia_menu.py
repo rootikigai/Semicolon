@@ -454,7 +454,34 @@ Press 0 to go back to SETTINGS MENU
             print("REMINDERS")
         case "11":
             while True:
-                print()
+                print("""
+-----
+CLOCK
+-----
+1. Alarm Clock          4. Stopwatch
+2. Clock Settings       5. Countdown Timer
+3. Date Settings        6. Auto update of Date and Time
+
+Press 0 to go back to MAIN MENU
+""")
+                clock = input("Select a Clock Menu choice with the corresponding number:")
+                if clock == "0":
+                    break
+                match clock:
+                    case "1":
+                        print("Alarm Clock")
+                    case "2":
+                        print("Clock Settings")
+                    case "3":
+                        print("Date Settings")
+                    case "4":
+                        print("Stopwatch")
+                    case "5":
+                        print("Countdown Timer")
+                    case "6":
+                        print("Auto update of Date and Time")
+                    case _:
+                        print("Invalid choice. Try again!")
 
         case "12":
             print("PROFILES")
