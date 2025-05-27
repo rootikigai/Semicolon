@@ -22,9 +22,11 @@ Press '0' to exit
 """)
                 if add_a_task == "0":
                     break
-                #match add_a_task:
+                match add_a_task:
+                    print("No task added")
 
         case "2":
+            while True:
 
         case "3":
 
