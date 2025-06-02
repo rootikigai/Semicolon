@@ -1,3 +1,5 @@
+import random
+
 programRun = 0
 numOfTrials = 0
 countCorrect = 0
@@ -5,8 +7,8 @@ countWrong = 0
 wrong = 0
 ans = 0
 while(programRun != 10):
-    num1 == int(Math.floor(Math.random() * 100))
-    num2 == int(Math.floor(Math.random() * 100))
+    num1 = random.randint(0, 100)
+    num2 = random.randint(0, 100)
     if(programRun > 9):
         break
     else:
