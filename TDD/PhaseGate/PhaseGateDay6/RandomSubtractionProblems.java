@@ -43,6 +43,5 @@ public class RandomSubtractionProblems{
                 programRun = programRun + 1;
             }
         }
-
     }
 }
