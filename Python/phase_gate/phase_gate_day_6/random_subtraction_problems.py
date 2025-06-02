@@ -18,14 +18,15 @@ while(programRun != 10):
             num2 = temp
         
         result = num1 - num2
-        ans = print(input("What is " + num1 + " - " + num2 + "?: "))
+        print("What is ", num1 , " - " , num2 , "?: ")
+        ans = int(input())
         if(ans == result):
             print(ans + " is correct.")
             countCorrect = countCorrect + 1
         elif(ans != result):
             for wrong in range(0, 1, +1):
                 print("Wrong. One trial left!")
-                ans = print(input("What is " + num1 + " - " + num2 + "?:"))
+                ans = int(input())
 
             countWrong = countWrong + 1;
         
