@@ -1,0 +1,5 @@
+Function named encrypt_text that implements a simple ROT13 cipher. The function takes input as string and return a new string inwith each xter shifted by 13 positions in the alphabet, wrapping around if necessary. Non-alphabetic xters should be left unchanged. Use TDD
+Sample input: "Hello, World!"
+Sample output: "Uryyb, Jbeyq!"
+
+Make sure to validate all data inputs, write

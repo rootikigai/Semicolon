@@ -1,0 +1,25 @@
+test, main, functions:
+Console Based To-Do List manager where user can add, view, mark as complete and delete tasks.
+Requirements:
+Use a list to store tasks
+Provide a menu with options:
+Add a task
+View all tasks
+Mark a task as complete
+Delete a task
+Exit
+Display tasks with their status (e.g, []Buy Groceries, [X]Finish homework)
+
+Sample main run:
+To-Do List Manager
+Add a task
+View task
+Mark task as complete
+delete a task
+Exit
+Enter your choice: 1
+Enter the task: Buy groceries
+Task Added
+etc.
+
+
