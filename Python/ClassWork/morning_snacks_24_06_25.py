@@ -55,3 +55,14 @@ def add_lists(list1, list2):
 
 print(add_lists([1, 2, 3], [4, 5, 6]))
 print('-------------------------------------------')
+
+def three_chars(anything):
+    length_of_three = []
+    for word in anything:
+        if len(word) == 3:
+            length_of_three.append(word)
+    return length_of_three
+
+
+new_things = three_chars(["lamb", "kit", "yam", "kings", "dogs", "man"])
+print(new_things)
