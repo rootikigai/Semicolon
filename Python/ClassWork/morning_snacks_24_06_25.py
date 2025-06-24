@@ -47,3 +47,11 @@ digits = sort_even_numbers([4, 7, 8, 9, 2, 10, 23, 44])
 print(digits)
 
 print('------------------------------------------')
+
+def add_lists(list1, list2):
+    list1 = [1, 2, 3]
+    list2 = [4, 5, 6]
+    return list1 + list2
+
+print(add_lists([1, 2, 3], [4, 5, 6]))
+print('-------------------------------------------')
