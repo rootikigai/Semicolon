@@ -34,3 +34,16 @@ def each_word_length(words):
 
 print(each_word_length(["red", "yellow", "blue", "green", "black"]))
 print('------------------------------')
+
+def sort_even_numbers(my_numbers):
+    even_numbers = []
+    for number in my_numbers:
+        if number % 2 == 0:
+            even_numbers.append(number)
+    return even_numbers
+
+
+digits = sort_even_numbers([4, 7, 8, 9, 2, 10, 23, 44])
+print(digits)
+
+print('------------------------------------------')
