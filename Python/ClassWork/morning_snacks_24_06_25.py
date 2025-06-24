@@ -23,3 +23,14 @@ print(remove_element(["red", "yellow", "blue", "green", "black"], "blue"))
 
 print('----------------------------')
 
+def each_word_length(words):
+    words = list(words)
+    length = []
+    word_length = 0
+    for word in words:
+        word_length = len(word)
+        length.append(word_length)
+    return length
+
+print(each_word_length(["red", "yellow", "blue", "green", "black"]))
+print('------------------------------')
