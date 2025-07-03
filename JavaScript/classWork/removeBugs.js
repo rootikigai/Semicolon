@@ -1,4 +1,3 @@
-
 function removeBugs(priorityNums){
     priorityNums = []
     for(let num = 1; num <= 5; num++){
