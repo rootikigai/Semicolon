@@ -21,5 +21,9 @@ for word in sentence_case_words:
         count += 1
 print(sentence_case_words, " ==> Count = ", count)
 
+word3 = "Hello! How are you doing?"
+newWord3 = re.findall(r"[\w]+", word3)
+print(newWord3)
+
 
 
