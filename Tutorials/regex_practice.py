@@ -13,5 +13,13 @@ userEmail = 'ifykel360@gmail.com'
 correctEmail = re.findall(r"^[\w.-]+@[\w.-]+\.\w+$", userEmail)
 print(correctEmail)
 
+word2 = "Alice and Bob are Good Friends"
+count = 0
+sentence_case_words = re.findall(r"\b[A-Z][a-z]+\b", word2)
+for word in sentence_case_words:
+    if word in word:
+        count += 1
+print(sentence_case_words, " ==> Count = ", count)
+
 
 
