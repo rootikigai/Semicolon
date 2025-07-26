@@ -17,7 +17,7 @@ describe('getEvenNumbers', () => {
     counter.increment()
     expect(counter.getCount()).toBe(1);
   })
-  test('that the counter can be increase multiple times', () => {
+  test('that the counter can be increased multiple times', () => {
     const counter = createCounter();
     counter.increment()
     counter.increment()

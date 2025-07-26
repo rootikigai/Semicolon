@@ -1,25 +1,36 @@
-function getEvenNumbers(array) {
-  return array.filter(num => num % 2 === 0);
-}
+// function getEvenNumbers(array) {
+//   return array.filter(num => num % 2 === 0);
+// }
 
-const createCounter = function() {
-  count = 0;
-  return {
-    getCount:() => {
-      return count
-    },
-    increment:() => {
-      count++
-    },
-    decrement:() => {
-      count--;
-    }
-  };
+// const createCounter = function() {
+//   count = 0;
+//   return {
+//     getCount:() => {
+//       return count
+//     },
+//     increment:() => {
+//       count++
+//     },
+//     decrement:() => {
+//       count--;
+//     }
+//   };
+// };
+
+// module.exports = {getEvenNumbers, createCounter};
+
+
+const Person = {
+  name: 'Kelvin Ifeanyi',
+  age: 33,
+  discipline: 'Software Engineer',
+  school: 'Semicolon Africa',
+  greet: function() {
+    return `Hello, my name is ${this.name}, I am ${this.age} years old and I am currently studying to become a ${this.discipline} at ${this.school}.`;
+  }
 };
 
-module.exports = {getEvenNumbers, createCounter};
-
-
+console.log(Person.greet());
 
 
 /*
