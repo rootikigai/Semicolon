@@ -1,7 +1,17 @@
 number = int(input("Enter a number that has 5 digits: "))
 
-while number > 0:
-    digit = number % 10  # Get the last digit
-    print(digit, end=' ')  # Print the digit
-    number = number // 10  # Remove the last digit
+divisor = 10000 
+while number != 0:
+    digit = number // divisor
+    print(digit, end='\t')
+    number = number % divisor
+    divisor //= 10
+
+
+
+
+
+
+
+
 
