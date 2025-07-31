@@ -1,5 +1,5 @@
-for row in range(11):
-    for column in range(1, row, +1):
+for row in range(1, 11):
+    for column in range(0, row, +1):
         print('*', end="")
     print()
 
