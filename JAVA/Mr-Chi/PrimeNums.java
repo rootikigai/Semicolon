@@ -1,14 +1,16 @@
 public class PrimeNums{
-	public static void main(String[] args){
-
-	  int number = 10;
-    int primeNos = 0;
-
-		for(int numCheck = 0; numCheck <= number / 2; numCheck++){
-      if(numCheck % 2 >= 2){
-        System.out.println(numCheck);
+  public static void main(String[] args){
+    int number = 10;
+    int prime = 0;
+    int numbers = 0;
+		for(numbers = 2; numbers <= number; numbers++){
+      if(number % numbers == 1 && number % numbers == numbers){
+        prime++;
       }
-      System.out.println(numCheck);
-    }
-	}
+      if(prime == 2){
+      System.out.println(numbers);
+      }
+    }     
+  }
 }
+
