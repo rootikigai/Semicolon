@@ -8,10 +8,10 @@ public class TaskFour {
         for (int index = 0; index < 10; index++) {
             System.out.print("Enter number " + (index + 1) + ": ");
             int score = input.nextInt();
-            count++;
             if(count % 2 == 0) {
                 sum += score;
             }
+            count = count + 1;
         }
         System.out.println("The sum of even indexes is " + sum);
     }
