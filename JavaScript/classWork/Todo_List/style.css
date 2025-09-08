@@ -1,0 +1,45 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px 40px ;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightblue;
+}
+
+.page-banner{
+    background: rgb(194, 233, 248);
+    padding: 10px 0;
+
+}
+
+.page-banner h1, p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.page-banner input{
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #444;
+}
