@@ -27,7 +27,7 @@ while number_count < 10:
         number_count += 1
         if number > largest:
             largest = number
-        if number < largest and number > second_largest:
-            number = second_largest
+            if number < largest and number > second_largest:
+                number = second_largest
 print(f"{largest} is the largest number")
 print(second_largest)
