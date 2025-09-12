@@ -69,7 +69,7 @@ public class ArrayKata{
       }
     }
     return noOfOdd;
-  }*/
+  }
 //noOfEvenNumbersIn
   public static int noOfEvenNumbersIn(int[] arrays){
     int noOfEven = 0;
@@ -79,5 +79,15 @@ public class ArrayKata{
       }
     }
     return noOfEven;
+  }*/
+//evenNumbersIn
+  public static int evenNumbersIn(int[] arrays){
+    int evens = 0;
+    for(int i = 0; i < arrays.length; i++){
+      if(arrays[i] % 2 == 0){
+        evens = arrays[i];
+      }
+    }
+  return evens;
   }
 }
