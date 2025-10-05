@@ -527,6 +527,6 @@ Select Menu (Enter corresponding number): """;
         default:
           System.out.println("Invalid selection");
           break;
-    }//END OF MAIN MENU
+    }//END OF MAIN MENU OMOOOOOO!!!
   }
 }
